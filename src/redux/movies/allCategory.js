@@ -1,26 +1,22 @@
-// categories.js
+// movies.js
 import { createAsyncThunk } from '@reduxjs/toolkit';
 
 // Actions... types
-const GET_CATEGORY = 'movies-react/movies/GET_CATEGORY';
-const UPDATE_CATEGORY = 'movies-react/movies/UPDATE_CATEGORY';
+const GET_ALLCATEGORY = 'movies-react/movies/GET_ALLCATEGORY';
 
 // Reducer
 export default function reducer(state = [], action) {
   switch (action.type) {
     // do reducer stuff
-    // GET categories from the API
-    case `${GET_CATEGORY}/fulfilled`:
-      return action.payload;
-    // UPDATE categories from the API
-    case UPDATE_CATEGORY:
+    // GET movies from the API
+    case `${GET_ALLCATEGORY}/fulfilled`:
       return action.payload;
     default: return state;
   }
 }
 
 // Action Creators
-export const getCategory = createAsyncThunk(GET_CATEGORY, async () => {
+export const getAllCategory = createAsyncThunk(GET_ALLCATEGORY, async () => {
   const getCategoryUrl = 'https://api.themoviedb.org/3/genre/movie/list';
   const response = await fetch(getCategoryUrl,
     {
@@ -33,8 +29,4 @@ export const getCategory = createAsyncThunk(GET_CATEGORY, async () => {
     });
   const result = await response.json();
   return result.genres;
-}); /* getCategory - createAsyncThunk - API */
-
-export function updateCategory(obj) {
-  return { type: UPDATE_CATEGORY, payload: obj };
-} /* updateCategory - searchBar component */
+}); /* getAllCategory - createAsyncThunk - API */
