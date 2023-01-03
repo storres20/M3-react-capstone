@@ -1,0 +1,23 @@
+.designContainer {
+  color: white;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.designContainer > p {
+  margin: 0;
+}
+
+.designContainer > p > a {
+  text-decoration: none;
+}
+
+.designContainer > p > a > b {
+  color: #0d6efd;
+}
+
+.designContainer > p > a > b:hover {
+  color: #0343a2;
+}
