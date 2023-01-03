@@ -41,7 +41,7 @@ export default function MoviesGrid() {
       {loading
         ? (
           <div>
-            <h2 className={styles.title}>{category[0].name}</h2>
+            {(category.length === 0) ? '' : <h2 className={styles.title}>{category[0].name}</h2>}
 
             {/* Filter Search Bar */}
             <SearchBar />
