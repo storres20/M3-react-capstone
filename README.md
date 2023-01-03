@@ -20,6 +20,7 @@
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
   - [🚀 Live Demo ](#-live-demo-)
+  - [🚀 Video Demo ](#-video-demo-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -81,6 +82,14 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo Link](https://M3-react-capstone.netlify.app/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- VIDEO DEMO -->
+## 🚀 Video Demo <a name="video-demo"></a>
+
+- [Video Demo Link](https://loom.com/share/3a0ab662aa4645dc9428e5d5e4f91ad6)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
