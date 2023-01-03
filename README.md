@@ -69,6 +69,7 @@
 ### Key Features <a name="key-features"></a>
 
 - **[List the most recent movies]**
+- **[Search bar for movies and categories]**
 - **[Movies sort by categories]**
 - **[Movie details like name, description, genres]**
 - **[About page to thank TMDB, the API owner]**
