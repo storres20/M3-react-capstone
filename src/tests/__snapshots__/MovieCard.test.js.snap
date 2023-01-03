@@ -5,7 +5,7 @@ exports[`renders correctly 1`] = `
   className="movieCard"
 >
   <a
-    href="/detailPage/399566"
+    href="/movie/399566"
     onClick={[Function]}
   >
     <img

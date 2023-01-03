@@ -2,7 +2,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { configureStore } from '@reduxjs/toolkit';
 import { Provider } from 'react-redux';
-import MoviesGrid from '../pages/Category/MoviesGrid';
+import MoviesGrid from '../pages/DetailPage/MoviesGrid';
 import moviesReducer from '../redux/movies/movies';
 import categoriesReducer from '../redux/movies/categories';
 
