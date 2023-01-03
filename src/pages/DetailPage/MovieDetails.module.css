@@ -27,7 +27,7 @@
 /* BACK button */
 .button {
   background-color: #e6206f;
-  box-shadow: white 0px 5px 15px;
+  box-shadow: white 0 5px 15px;
   cursor: pointer;
   border-radius: 50px;
   width: 80px;

@@ -32,7 +32,7 @@
   align-items: center;
   cursor: pointer;
   background-color: #e6206f;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
 }
 
 .movieCard:hover {
