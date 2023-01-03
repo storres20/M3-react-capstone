@@ -1,0 +1,14 @@
+.divFlex {
+  display: flex;
+  justify-content: center;
+}
+
+.inputFlex {
+  background-color: black;
+  color: white;
+  max-width: 300px;
+  min-width: 250px;
+  margin-top: 30px;
+  height: 40px;
+  border-radius: 8px;
+}
