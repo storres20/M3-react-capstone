@@ -1,6 +1,7 @@
 .title {
   text-align: center;
   margin-top: 30px;
+  margin-bottom: 0;
   font-size: 3rem;
   font-weight: bold;
 }

@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import MovieCard from '../../components/MovieCard/MovieCard';
 import styles from './MoviesGrid.module.css';
 import ScrollButton from '../../components/ScrollButton/ScrollButton';
@@ -41,7 +41,10 @@ export default function MoviesGrid() {
       {loading
         ? (
           <div>
-            {(category.length === 0) ? '' : <h2 className={styles.title}>{category[0].name}</h2>}
+            <div className={styles.flexTitle}>
+              {(category.length === 0) ? '' : <h2 className={styles.title}>{category[0].name}</h2>}
+              <Link to="/"><div className={styles.button}>Back</div></Link>
+            </div>
 
             {/* Filter Search Bar */}
             <SearchBar />

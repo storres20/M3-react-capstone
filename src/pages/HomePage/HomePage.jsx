@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import styles from './HomePage.module.css';
 import ScrollButton from '../../components/ScrollButton/ScrollButton';
 import { updateMovie } from '../../redux/movies/movies';
+import SearchCat from '../../components/SearchCat/SearchCat';
 
 export default function HomePage() {
   /* Load Redux State */
@@ -21,9 +22,11 @@ export default function HomePage() {
   return (
     <div>
       <h2 className={styles.title}>Categories</h2>
+      {/* Filter Search Category */}
+      <SearchCat />
       <ul className={styles.moviesGrid}>
         {categories.map((movie) => (
-          <Link key={movie.id} to={`/category/${movie.id}`}>
+          <Link key={movie.id} to={`/detailPage/${movie.id}`}>
             <li className={styles.movieCard}>
               <div>{movie.name}</div>
             </li>
