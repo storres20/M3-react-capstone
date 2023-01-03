@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<li
+  className="movieCard"
+>
+  <a
+    href="/detailPage/399566"
+    onClick={[Function]}
+  >
+    <img
+      alt="Godzilla vs. Kong"
+      className="movieImage"
+      height={345}
+      src="https://image.tmdb.org/t/p/w300/pgqgaUx1cJb5oZQQ5v0tNARCeBp.jpg"
+      width={230}
+    />
+    <div>
+      Godzilla vs. Kong
+    </div>
+  </a>
+</li>
+`;

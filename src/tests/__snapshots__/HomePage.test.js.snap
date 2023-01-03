@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`My Connected React-Redux Component renders correctly 1`] = `
+<div>
+  <h2
+    className="title"
+  >
+    Categories
+  </h2>
+  <ul
+    className="moviesGrid"
+  />
+  <div
+    className="button"
+  />
+</div>
+`;
