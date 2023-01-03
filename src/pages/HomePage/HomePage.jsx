@@ -5,6 +5,7 @@ import styles from './HomePage.module.css';
 import ScrollButton from '../../components/ScrollButton/ScrollButton';
 import { updateMovie } from '../../redux/movies/movies';
 import SearchCat from '../../components/SearchCat/SearchCat';
+import { getCategory } from '../../redux/movies/categories';
 
 export default function HomePage() {
   /* Load Redux State */
@@ -17,6 +18,7 @@ export default function HomePage() {
   /* Clean - Redux movies store */
   useEffect(() => {
     dispatch(updateMovie([]));
+    dispatch(getCategory());
   }, [dispatch]);
 
   return (
