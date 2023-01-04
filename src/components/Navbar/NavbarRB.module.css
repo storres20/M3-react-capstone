@@ -21,6 +21,9 @@
   color: white;
   font-weight: bold;
   padding-right: 80px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
 }
 
 .NavTitle:hover,
@@ -28,6 +31,16 @@
   opacity: 0.8;
 }
 
+.NavTitle > a:nth-child(1) {
+  display: none;
+}
+
 span {
   color: black !important;
+}
+
+@media (max-width: 560px) {
+  .NavTitle > a:nth-child(1) {
+    display: block;
+  }
 }

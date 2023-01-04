@@ -25,6 +25,10 @@
   .moviesGrid {
     grid-template-columns: 100%;
   }
+  
+  .flexTitle {
+    display: none;
+  }
 }
 
 /* BACK button */

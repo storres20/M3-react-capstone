@@ -39,3 +39,9 @@
   opacity: 0.8;
   background-color: #ca3973;
 }
+
+@media (max-width: 560px) {
+  .button {
+    display: none;
+  }
+}
