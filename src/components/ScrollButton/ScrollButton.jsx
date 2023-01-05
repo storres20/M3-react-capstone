@@ -33,7 +33,7 @@ function ScrollButton() {
   };
 
   return (
-    <div className={styles.button}>
+    <div className={styles.button} data-testid="ScrollButton">
       {showButton && (
         <FaArrowCircleUp onClick={scrollToTop} />
       )}

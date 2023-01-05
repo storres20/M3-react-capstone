@@ -3,5 +3,6 @@
 exports[`renders correctly 1`] = `
 <div
   className="button"
+  data-testid="ScrollButton"
 />
 `;

@@ -29,10 +29,8 @@ function SearchCat() {
     }
   };
   return (
-    <div>
-      <div className={styles.divFlex}>
-        <input className={styles.inputFlex} type="text" placeholder="Search by category..." onChange={(event) => handleSearch(event)} />
-      </div>
+    <div className={styles.divFlex} data-testid="SearchCat">
+      <input className={styles.inputFlex} type="text" placeholder="Search by category..." onChange={(event) => handleSearch(event)} />
     </div>
   );
 }

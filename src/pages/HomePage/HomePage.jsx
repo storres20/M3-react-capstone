@@ -26,7 +26,7 @@ export default function HomePage() {
       <h2 className={styles.title}>Categories</h2>
       {/* Filter Search Category */}
       <SearchCat />
-      <ul className={styles.moviesGrid}>
+      <ul className={styles.moviesGrid} data-testid="moviesGrid">
         {categories.map((movie) => (
           <Link key={movie.id} to={`/detailPage/${movie.id}`}>
             <li className={styles.movieCard}>
