@@ -9,6 +9,7 @@
 .moviesGrid {
   display: grid;
   grid-template-columns: repeat(auto-fill, 230px);
+
   /* display: flex;
   flex-direction: row;
   flex-wrap: wrap; */
@@ -24,7 +25,7 @@
     padding: 40px 0 0 0;
     justify-content: normal;
   }
-  
+
   /* .moviesGrid > a {
     width: 50%;
   } */
@@ -61,12 +62,12 @@
     width: 90%;
     height: auto;
   }
-  
+
   .movieCard {
     border-radius: 0;
     height: 200px;
   }
-  
+
   .moviesGrid > a:nth-child(2) > .movieCard { background-color: #ca3973; }
   .moviesGrid > a:nth-child(3) > .movieCard { background-color: #ca3973; }
   .moviesGrid > a:nth-child(6) > .movieCard { background-color: #ca3973; }
@@ -77,5 +78,4 @@
   .moviesGrid > a:nth-child(15) > .movieCard { background-color: #ca3973; }
   .moviesGrid > a:nth-child(18) > .movieCard { background-color: #ca3973; }
   .moviesGrid > a:nth-child(19) > .movieCard { background-color: #ca3973; }
-  
 }
