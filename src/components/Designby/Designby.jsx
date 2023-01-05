@@ -3,7 +3,7 @@ import './Designby.scss';
 
 function Designby() {
   return (
-    <div className="designContainer">
+    <div className="designContainer" data-testid="designby">
       <p>
         Designed by
         {' '}

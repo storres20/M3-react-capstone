@@ -10,13 +10,13 @@ export default function NavbarRB() {
   return (
     <Navbar bg="dark" expand="md" sticky="top" variant="dark">
       <Container>
-        <Navbar.Brand className={styles.NavTitle}>
+        <Navbar.Brand className={styles.NavTitle} data-testid="nav-brand">
           <NavLink to="/">&#60;</NavLink>
           <NavLink to="/">Movies</NavLink>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className={`me-auto ${styles.NavBar}`}>
+          <Nav className={`me-auto ${styles.NavBar}`} data-testid="nav-links">
             <NavLink to="/" className={styles.NavSubTitle}>Home</NavLink>
             <NavLink to="/about" className={styles.NavSubTitle}>About</NavLink>
           </Nav>

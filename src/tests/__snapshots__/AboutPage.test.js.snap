@@ -14,7 +14,9 @@ Array [
         <div
           className="content"
         >
-          <h2>
+          <h2
+            data-testid="title"
+          >
             Hi there,
           </h2>
           <img
@@ -26,7 +28,9 @@ Array [
           <h3>
             Let‘s talk about TMDB
           </h3>
-          <p>
+          <p
+            data-testid="paragraph"
+          >
             The Movie Database (TMDB) is a
             <em>
               community built
@@ -44,6 +48,7 @@ Array [
           </h4>
           <div
             className="wrapper"
+            data-testid="wrapper"
           >
             <div>
               <div>

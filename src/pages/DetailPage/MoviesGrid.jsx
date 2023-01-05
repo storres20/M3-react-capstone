@@ -41,15 +41,15 @@ export default function MoviesGrid() {
       {loading
         ? (
           <div>
-            <div className={styles.flexTitle}>
+            <div className={styles.flexTitle} data-testid="title">
               {(category.length === 0) ? '' : <h2 className={styles.title}>{category[0].name}</h2>}
-              <Link to="/"><div className={styles.button}>Back</div></Link>
+              <Link to="/"><div className={styles.button} data-testid="backButton">Back</div></Link>
             </div>
 
             {/* Filter Search Bar */}
             <SearchBar />
 
-            <ul className={styles.moviesGrid}>
+            <ul className={styles.moviesGrid} data-testid="movieList">
               {movies.map((movie) => <MovieCard key={movie.id} movie={movie} />)}
             </ul>
 

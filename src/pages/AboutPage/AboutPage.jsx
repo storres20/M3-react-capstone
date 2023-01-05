@@ -9,11 +9,11 @@ export default function AboutPage() {
         <div className={`${styles.header} ${styles.gradient}`}>
           <div className={styles.inner_content}>
             <div className={styles.content}>
-              <h2>Hi there,</h2>
+              <h2 data-testid="title">Hi there,</h2>
               <img src="https://www.themoviedb.org/assets/2/v4/marketing/deadpool-06f2a06d7a418ec887300397b6861383bf1e3b72f604ddd5f75bce170e81dce9.png" width="451" height="149" alt="pictureT" />
 
               <h3>Let&lsquo;s talk about TMDB</h3>
-              <p>
+              <p data-testid="paragraph">
                 The Movie Database (TMDB) is a
                 <em>community built</em>
                 {' '}
@@ -24,7 +24,7 @@ export default function AboutPage() {
               </p>
 
               <h4>The TMDB advantage</h4>
-              <div className={styles.wrapper}>
+              <div className={styles.wrapper} data-testid="wrapper">
                 <div>
                   <div>1</div>
                   <p>Every year since 2008, the number of contributions to our database has increased. With over 750,000 developers and companies using our platform, TMDB has become a premiere source for metadata.</p>

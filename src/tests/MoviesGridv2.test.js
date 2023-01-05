@@ -1,18 +1,19 @@
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import { configureStore } from '@reduxjs/toolkit';
 import { Provider } from 'react-redux';
 import { render as rtlRender, screen } from '@testing-library/react';
-import HomePage from '../pages/HomePage/HomePage';
 import categoriesReducer from '../redux/movies/categories';
-import allCategoryReducer from '../redux/movies/allCategory';
+import moviesReducer from '../redux/movies/movies';
 import '@testing-library/jest-dom';
+import MoviesGrid from '../pages/DetailPage/MoviesGrid';
 
 // configureStore
 const createTestStore = () => {
   const store = configureStore({
     reducer: {
       category: categoriesReducer,
-      allCategory: allCategoryReducer,
+      movie: moviesReducer,
     },
   });
 
@@ -24,28 +25,30 @@ const store = createTestStore();
 // render component
 const render2 = (component) => rtlRender(
   <Provider store={store}>
-    {component}
+    <BrowserRouter>
+      {component}
+    </BrowserRouter>
   </Provider>,
 );
 
 beforeEach(() => {
-  render2(<HomePage />);
+  render2(<MoviesGrid />);
 });
 
 // Test
-describe('<HomePage />', () => {
-  it('Title Categories', async () => {
-    expect(screen.getByText('Categories')).toBeInTheDocument();
+describe('<MoviesGrid />', () => {
+  it('Title', async () => {
+    expect(screen.getByTestId('title')).toBeInTheDocument();
     // screen.debug();
   });
 
-  it('Search bar for Categories', () => {
-    expect(screen.getByPlaceholderText('Search by category...')).toBeInTheDocument();
-    expect(screen.getByTestId('SearchCat')).toBeInTheDocument();
+  it('Search bar for Movies', () => {
+    expect(screen.getByPlaceholderText('Search by title...')).toBeInTheDocument();
+    expect(screen.getByTestId('SearchBar')).toBeInTheDocument();
   });
 
-  it('Category list', () => {
-    expect(screen.getByTestId('categoryList')).toBeInTheDocument();
+  it('Movie list', () => {
+    expect(screen.getByTestId('movieList')).toBeInTheDocument();
   });
 
   it('Scroll Button', () => {

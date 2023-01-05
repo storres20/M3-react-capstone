@@ -30,7 +30,7 @@ function SearchBar() {
   };
   return (
     <div>
-      <div className={styles.divFlex}>
+      <div className={styles.divFlex} data-testid="SearchBar">
         <input className={styles.inputFlex} type="text" placeholder="Search by title..." onChange={(event) => handleSearch(event)} />
       </div>
     </div>
