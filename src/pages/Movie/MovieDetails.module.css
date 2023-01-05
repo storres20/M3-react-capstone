@@ -1,0 +1,47 @@
+.detailsContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.col {
+  max-width: 400px;
+  min-width: 250px;
+  margin: 15px;
+  height: auto;
+  height: 80%;
+}
+
+.movieImage {
+  border-radius: 15px;
+}
+
+.movieDetails {
+  font-size: 1.5rem;
+}
+
+.firstItem {
+  margin-top: 0;
+}
+
+/* BACK button */
+.button {
+  background-color: #e6206f;
+  box-shadow: white 0 5px 15px;
+  cursor: pointer;
+  border-radius: 50px;
+  width: 80px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.button:hover {
+  opacity: 0.8;
+  background-color: #ca3973;
+}
+
+@media (max-width: 560px) {
+  .button {
+    display: none;
+  }
+}

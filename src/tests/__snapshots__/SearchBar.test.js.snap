@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`My Connected React-Redux Component renders correctly 1`] = `
+<div>
+  <div
+    className="divFlex"
+    data-testid="SearchBar"
+  >
+    <input
+      className="inputFlex"
+      onChange={[Function]}
+      placeholder="Search by title..."
+      type="text"
+    />
+  </div>
+</div>
+`;

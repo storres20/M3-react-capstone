@@ -1,0 +1,165 @@
+.main {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.header {
+  background-position: 0 0;
+  background-color: #0a1526;
+}
+
+.gradient {
+  width: 100%;
+  background-image: radial-gradient(at 25% top, #32112c 0%, #0a1526 40%);
+  z-index: 0;
+}
+
+.inner_content {
+  padding-top: 70px;
+  box-sizing: border-box;
+  width: 100%;
+  background-image: url("https://www.themoviedb.org/assets/2/v4/marketing/red_pipes-594140f35efb300741add9827cc4f41053b0a4bb7ba249a40375377cc9d22d47.svg");
+  background-position: center -250px;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+.content {
+  color: #fff;
+  padding: 20px 0 70px 0;
+  width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.content > h2 {
+  height: 233px;
+  line-height: 173px;
+  font-family: 'Lato', sans-serif;
+  font-style: italic;
+  font-size: 8em;
+  font-weight: 400;
+}
+
+.content > img {
+  margin-top: -140px;
+  width: 100%;
+  height: auto;
+}
+
+.content > h3 {
+  font-size: 4em;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.content > p {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.content > h4 {
+  font-size: 2em;
+  margin-top: 70px;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.wrapper > div {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.wrapper > div > div {
+  color: #d40242;
+  font-weight: 700;
+  font-size: 4em;
+  line-height: 0.8em;
+  opacity: 0.7;
+  width: 8vw;
+}
+
+.wrapper > div > p {
+  text-align: left;
+  margin: 0;
+  width: 92vw;
+}
+
+.white {
+  background-color: #fff;
+  color: #d40242 !important;
+}
+
+.button {
+  margin-top: 40px;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.2em;
+  transition: 0.2s all;
+}
+
+.button:hover {
+  background-color: #d40242;
+  color: #fff !important;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-device-width: 991px) {
+  /* Styles */
+  .inner_content {
+    /* width: 100hv; */
+    background-position: right -350px;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .content > h2 {
+    height: 143px;
+    line-height: 33px;
+    font-size: 4em;
+    font-weight: 400;
+  }
+
+  .content > img {
+    width: 90%;
+    height: auto;
+  }
+
+  .content > h3 {
+    font-size: 2em;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+
+  .content > p {
+    margin: 0 20px;
+  }
+
+  .wrapper > div > div {
+    width: 15%;
+  }
+
+  .wrapper > div > p {
+    width: 80%;
+    text-align: justify;
+  }
+}

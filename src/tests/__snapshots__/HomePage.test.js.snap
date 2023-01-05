@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`My Connected React-Redux Component renders correctly 1`] = `
+<div>
+  <h2
+    className="title"
+  >
+    Categories
+  </h2>
+  <div
+    className="divFlex"
+    data-testid="SearchCat"
+  >
+    <input
+      className="inputFlex"
+      onChange={[Function]}
+      placeholder="Search by category..."
+      type="text"
+    />
+  </div>
+  <ul
+    className="moviesGrid"
+    data-testid="categoryList"
+  />
+  <div
+    className="button"
+    data-testid="ScrollButton"
+  />
+</div>
+`;

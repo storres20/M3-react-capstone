@@ -1,0 +1,46 @@
+.NavBar {
+  display: flex;
+  align-items: baseline;
+  gap: 100px;
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 991px) {
+  .NavBar {
+    display: flex;
+    align-items: baseline;
+    gap: 25px;
+    padding: 20px 0;
+  }
+}
+
+.NavTitle {
+  text-align: center;
+  font-size: 1.5rem;
+  text-shadow: #fff 0 0 5px, #fff 0 0 10px, #fff 0 0 15px, #ff2d95 0 0 20px, #ff2d95 0 0 30px, #ff2d95 0 0 40px, #ff2d95 0 0 50px, #ff2d95 0 0 75px;
+  color: white;
+  font-weight: bold;
+  padding-right: 80px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.NavTitle:hover,
+.NavSubTitle:hover {
+  opacity: 0.8;
+}
+
+.NavTitle > a:nth-child(1) {
+  display: none;
+}
+
+span {
+  color: black !important;
+}
+
+@media (max-width: 560px) {
+  .NavTitle > a:nth-child(1) {
+    display: block;
+  }
+}

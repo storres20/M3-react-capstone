@@ -1,0 +1,49 @@
+.moviesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 230px);
+  gap: 40px;
+  padding: 40px;
+  justify-content: center;
+}
+
+.flexTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  gap: 20px;
+  flex-wrap: wrap-reverse;
+}
+
+.title {
+  font-size: 3rem;
+  margin: 0;
+  text-align: center;
+}
+
+@media (max-width: 560px) {
+  .moviesGrid {
+    grid-template-columns: 100%;
+  }
+
+  .flexTitle {
+    display: none;
+  }
+}
+
+/* BACK button */
+.button {
+  background-color: #e6206f;
+  box-shadow: white 0 5px 15px;
+  cursor: pointer;
+  border-radius: 50px;
+  width: 80px;
+  text-align: center;
+  height: 36px;
+  font-size: 1.5rem;
+}
+
+.button:hover {
+  opacity: 0.8;
+  background-color: #ca3973;
+}
